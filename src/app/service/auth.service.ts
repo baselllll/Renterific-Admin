@@ -40,4 +40,10 @@ export class AuthService {
     this._Router.navigate(['./sign-in']);
 
   }
+  getAllUser(){
+    return this._HttpClient.get('http://localhost:3333/api/user/all-user')
+  }
+  deleteUser(id:any){
+    return this._HttpClient.delete(`http://localhost:3333/api/user/delete-user/${id}`)
+  }
 }
