@@ -18,6 +18,7 @@ import { ApprovedProductsTableComponent } from './approved-products-table/approv
 import { PendingProductsTableComponent } from './pending-products-table/pending-products-table.component';
 import { CategoriesTableComponent } from './categories-table/categories-table.component';
 
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -27,9 +28,6 @@ import { CategoriesTableComponent } from './categories-table/categories-table.co
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
-    })
   ],
   declarations: [
     AppComponent,
@@ -38,7 +36,6 @@ import { CategoriesTableComponent } from './categories-table/categories-table.co
     ApprovedProductsTableComponent,
     PendingProductsTableComponent,
     CategoriesTableComponent,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
